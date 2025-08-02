@@ -12,7 +12,6 @@ topic = topics[datetime.datetime.now().day % len(topics)]
 rss_url = "https://trends.google.com/trends/trendingsearches/daily/rss?geo=US"
 rss = requests.get(rss_url, timeout=10).text
 titles = re.findall(r"<title>(.*?)</title>", rss)[1:4]
-python if not titles: titles = ["Default Title 1", "Default Title 2"]
 seed = random.choice(titles)
 
 prompt = f"""

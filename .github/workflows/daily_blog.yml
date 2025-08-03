@@ -19,7 +19,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests supabase-py
+        run: pip install requests supabase
 
       - name: Run Python script
         env:

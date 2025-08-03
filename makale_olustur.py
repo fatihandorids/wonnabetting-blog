@@ -33,10 +33,10 @@ def generate_article_with_gemini(serpapi_data):
     """Gemini API ile SEO dostu makale oluşturur."""
     prompt = f"""
     Aşağıdaki Google arama sonuçlarından elde edilen verilere dayanarak, "betting tips" anahtar kelimesine odaklanan 350 kelimelik, SEO dostu, bilgilendirici ve okunabilir bir blog makalesi oluştur. Makale, "betting tips" ve "betting predictions" anahtar kelimelerini içermelidir.
-    
+
     Arama Sonuçları:
     {json.dumps(serpapi_data, indent=2)}
-    
+
     Makale başlığını da oluştur. Başlık ve makale içeriğini JSON formatında döndür. Örnek: {{"title": "Makale Başlığı", "content": "Makale içeriği..."}}
     """
     

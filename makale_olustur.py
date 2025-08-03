@@ -56,7 +56,6 @@ def generate_article_with_gemini(serpapi_data):
     response.raise_for_status()
     gemini_response = response.json()
     
-    # Gelen yanıtı işleyin ve JSON formatını döndürün
     try:
         raw_text = gemini_response["candidates"][0]["content"]["parts"][0]["text"].replace('```json', '').replace('```', '').strip()
         return json.loads(raw_text)

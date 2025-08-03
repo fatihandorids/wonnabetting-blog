@@ -40,7 +40,7 @@ def generate_article_with_gemini(serpapi_data):
     Makale başlığını da oluştur. Başlık ve makale içeriğini JSON formatında döndür. Örnek: {{"title": "Makale Başlığı", "content": "Makale içeriği..."}}
     """
     
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={GEMINI_API_KEY}"
+    url = url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={GEMINI_API_KEY}"
     headers = {"Content-Type": "application/json"}
     payload = {
         "contents": [
